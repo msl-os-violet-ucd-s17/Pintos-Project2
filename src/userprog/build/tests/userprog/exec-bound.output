@@ -1,0 +1,32 @@
+Copying tests/userprog/exec-bound to scratch partition...
+Copying tests/userprog/child-args to scratch partition...
+qemu-system-x86_64 -device isa-debug-exit -hda /tmp/QyvDlr1Yz7.dsk -m 4 -net none -nographic -monitor null
+PiLo hda1
+Loading...........
+Kernel command line: -q -f extract run exec-bound
+Pintos booting with 3,968 kB RAM...
+367 pages available in kernel pool.
+367 pages available in user pool.
+Calibrating timer...  202,752,000 loops/s.
+hda: 5,040 sectors (2 MB), model "QM00001", serial "QEMU HARDDISK"
+hda1: 183 sectors (91 kB), Pintos OS kernel (20)
+hda2: 4,096 sectors (2 MB), Pintos file system (21)
+hda3: 189 sectors (94 kB), Pintos scratch (22)
+filesys: using hda2
+scratch: using hda3
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch device into file system...
+Putting 'exec-bound' into the file system...
+Putting 'child-args' into the file system...
+Erasing ustar archive...
+Executing 'exec-bound':
+Execution of 'exec-bound' complete.
+Timer: 89 ticks
+Thread: 0 idle ticks, 89 kernel ticks, 0 user ticks
+hda2 (filesys): 51 reads, 384 writes
+hda3 (scratch): 188 reads, 2 writes
+Console: 881 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...

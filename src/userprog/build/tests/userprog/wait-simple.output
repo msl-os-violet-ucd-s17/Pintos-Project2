@@ -1,0 +1,32 @@
+Copying tests/userprog/wait-simple to scratch partition...
+Copying tests/userprog/child-simple to scratch partition...
+qemu-system-x86_64 -device isa-debug-exit -hda /tmp/e47rx2O0PI.dsk -m 4 -net none -nographic -monitor null
+PiLo hda1
+Loading...........
+Kernel command line: -q -f extract run wait-simple
+Pintos booting with 3,968 kB RAM...
+367 pages available in kernel pool.
+367 pages available in user pool.
+Calibrating timer...  419,020,800 loops/s.
+hda: 5,040 sectors (2 MB), model "QM00001", serial "QEMU HARDDISK"
+hda1: 183 sectors (91 kB), Pintos OS kernel (20)
+hda2: 4,096 sectors (2 MB), Pintos file system (21)
+hda3: 186 sectors (93 kB), Pintos scratch (22)
+filesys: using hda2
+scratch: using hda3
+Formatting file system...done.
+Boot complete.
+Extracting ustar archive from scratch device into file system...
+Putting 'wait-simple' into the file system...
+Putting 'child-simple' into the file system...
+Erasing ustar archive...
+Executing 'wait-simple':
+Execution of 'wait-simple' complete.
+Timer: 84 ticks
+Thread: 0 idle ticks, 84 kernel ticks, 0 user ticks
+hda2 (filesys): 51 reads, 378 writes
+hda3 (scratch): 185 reads, 2 writes
+Console: 887 characters output
+Keyboard: 0 keys pressed
+Exception: 0 page faults
+Powering off...
