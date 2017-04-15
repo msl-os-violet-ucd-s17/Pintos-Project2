@@ -1,15 +1,15 @@
 Copying tests/userprog/exec-arg to scratch partition...
 Copying tests/userprog/child-args to scratch partition...
-qemu-system-x86_64 -device isa-debug-exit -hda /tmp/2ZT6snTjRS.dsk -m 4 -net none -nographic -monitor null
+qemu-system-x86_64 -device isa-debug-exit -hda /tmp/6jtmlwL2j2.dsk -m 4 -net none -nographic -monitor null
 PiLo hda1
-Loading...........
+Loading............
 Kernel command line: -q -f extract run exec-arg
 Pintos booting with 3,968 kB RAM...
 367 pages available in kernel pool.
 367 pages available in user pool.
 Calibrating timer...  419,020,800 loops/s.
 hda: 5,040 sectors (2 MB), model "QM00001", serial "QEMU HARDDISK"
-hda1: 183 sectors (91 kB), Pintos OS kernel (20)
+hda1: 193 sectors (96 kB), Pintos OS kernel (20)
 hda2: 4,096 sectors (2 MB), Pintos file system (21)
 hda3: 186 sectors (93 kB), Pintos scratch (22)
 filesys: using hda2
@@ -21,12 +21,22 @@ Putting 'exec-arg' into the file system...
 Putting 'child-args' into the file system...
 Erasing ustar archive...
 Executing 'exec-arg':
+(exec-arg) begin
+(args) begin
+(args) argc = 2
+(args) argv[0] = 'child-args'
+(args) argv[1] = 'childarg'
+(args) argv[2] = null
+(args) end
+child-args: exit(0)
+(exec-arg) end
+exec-arg: exit(0)
 Execution of 'exec-arg' complete.
-Timer: 92 ticks
-Thread: 0 idle ticks, 92 kernel ticks, 0 user ticks
-hda2 (filesys): 90 reads, 378 writes
+Timer: 94 ticks
+Thread: 0 idle ticks, 89 kernel ticks, 5 user ticks
+hda2 (filesys): 134 reads, 378 writes
 hda3 (scratch): 185 reads, 2 writes
-Console: 873 characters output
+Console: 1064 characters output
 Keyboard: 0 keys pressed
 Exception: 0 page faults
 Powering off...

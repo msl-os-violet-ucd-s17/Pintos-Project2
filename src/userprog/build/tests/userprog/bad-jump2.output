@@ -1,14 +1,14 @@
 Copying tests/userprog/bad-jump2 to scratch partition...
-qemu-system-x86_64 -device isa-debug-exit -hda /tmp/8KJK241Y_1.dsk -m 4 -net none -nographic -monitor null
+qemu-system-x86_64 -device isa-debug-exit -hda /tmp/QVesh7ypPt.dsk -m 4 -net none -nographic -monitor null
 PiLo hda1
-Loading...........
+Loading............
 Kernel command line: -q -f extract run bad-jump2
 Pintos booting with 3,968 kB RAM...
 367 pages available in kernel pool.
 367 pages available in user pool.
-Calibrating timer...  71,987,200 loops/s.
+Calibrating timer...  415,744,000 loops/s.
 hda: 5,040 sectors (2 MB), model "QM00001", serial "QEMU HARDDISK"
-hda1: 183 sectors (91 kB), Pintos OS kernel (20)
+hda1: 193 sectors (96 kB), Pintos OS kernel (20)
 hda2: 4,096 sectors (2 MB), Pintos file system (21)
 hda3: 95 sectors (47 kB), Pintos scratch (22)
 filesys: using hda2
@@ -19,12 +19,21 @@ Extracting ustar archive from scratch device into file system...
 Putting 'bad-jump2' into the file system...
 Erasing ustar archive...
 Executing 'bad-jump2':
+(bad-jump2) begin
+Page fault at 0xc0000000: rights violation error reading page in user context.
+bad-jump2: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0xc0000000
+ cr2=c0000000 error=00000005
+ eax=c0000000 ebx=00000000 ecx=0000000e edx=00000027
+ esi=00000000 edi=00000000 esp=bfffff8c ebp=bfffffb8
+ cs=001b ds=0023 es=0023 ss=0023
+bad-jump2: exit(-1)
 Execution of 'bad-jump2' complete.
-Timer: 83 ticks
-Thread: 0 idle ticks, 83 kernel ticks, 0 user ticks
-hda2 (filesys): 26 reads, 194 writes
+Timer: 92 ticks
+Thread: 0 idle ticks, 88 kernel ticks, 5 user ticks
+hda2 (filesys): 65 reads, 194 writes
 hda3 (scratch): 94 reads, 2 writes
-Console: 829 characters output
+Console: 1242 characters output
 Keyboard: 0 keys pressed
-Exception: 0 page faults
+Exception: 1 page faults
 Powering off...

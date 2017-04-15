@@ -1,14 +1,14 @@
 Copying tests/userprog/bad-write to scratch partition...
-qemu-system-x86_64 -device isa-debug-exit -hda /tmp/gNjr8SxajU.dsk -m 4 -net none -nographic -monitor null
+qemu-system-x86_64 -device isa-debug-exit -hda /tmp/4tPhKjuyzS.dsk -m 4 -net none -nographic -monitor null
 PiLo hda1
-Loading...........
+Loading............
 Kernel command line: -q -f extract run bad-write
 Pintos booting with 3,968 kB RAM...
 367 pages available in kernel pool.
 367 pages available in user pool.
-Calibrating timer...  366,592,000 loops/s.
+Calibrating timer...  209,510,400 loops/s.
 hda: 5,040 sectors (2 MB), model "QM00001", serial "QEMU HARDDISK"
-hda1: 183 sectors (91 kB), Pintos OS kernel (20)
+hda1: 193 sectors (96 kB), Pintos OS kernel (20)
 hda2: 4,096 sectors (2 MB), Pintos file system (21)
 hda3: 94 sectors (47 kB), Pintos scratch (22)
 filesys: using hda2
@@ -19,12 +19,21 @@ Extracting ustar archive from scratch device into file system...
 Putting 'bad-write' into the file system...
 Erasing ustar archive...
 Executing 'bad-write':
+(bad-write) begin
+Page fault at 0: not present error writing page in user context.
+bad-write: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048097
+ cr2=00000000 error=00000006
+ eax=00000100 ebx=00000000 ecx=0000000e edx=00000027
+ esi=00000000 edi=00000000 esp=bfffff84 ebp=bfffffb8
+ cs=001b ds=0023 es=0023 ss=0023
+bad-write: exit(-1)
 Execution of 'bad-write' complete.
 Timer: 87 ticks
-Thread: 0 idle ticks, 88 kernel ticks, 1 user ticks
+Thread: 0 idle ticks, 80 kernel ticks, 7 user ticks
 hda2 (filesys): 65 reads, 192 writes
 hda3 (scratch): 93 reads, 2 writes
-Console: 830 characters output
+Console: 1227 characters output
 Keyboard: 0 keys pressed
-Exception: 0 page faults
+Exception: 1 page faults
 Powering off...

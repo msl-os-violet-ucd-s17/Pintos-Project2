@@ -1,14 +1,14 @@
 Copying tests/userprog/no-vm/multi-oom to scratch partition...
-qemu-system-x86_64 -device isa-debug-exit -hda /tmp/3ws4vlqgj1.dsk -m 4 -net none -nographic -monitor null
+qemu-system-x86_64 -device isa-debug-exit -hda /tmp/ViBeYIojC8.dsk -m 4 -net none -nographic -monitor null
 PiLo hda1
-Loading...........
+Loading............
 Kernel command line: -q -f extract run multi-oom
 Pintos booting with 3,968 kB RAM...
 367 pages available in kernel pool.
 367 pages available in user pool.
-Calibrating timer...  313,753,600 loops/s.
+Calibrating timer...  419,020,800 loops/s.
 hda: 5,040 sectors (2 MB), model "QM00001", serial "QEMU HARDDISK"
-hda1: 183 sectors (91 kB), Pintos OS kernel (20)
+hda1: 193 sectors (96 kB), Pintos OS kernel (20)
 hda2: 4,096 sectors (2 MB), Pintos file system (21)
 hda3: 112 sectors (56 kB), Pintos scratch (22)
 filesys: using hda2
@@ -19,12 +19,3316 @@ Extracting ustar archive from scratch device into file system...
 Putting 'multi-oom' into the file system...
 Erasing ustar archive...
 Executing 'multi-oom':
+(multi-oom) begin
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=2172beca ebx=00000015 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=03b45a13 ebx=00000018 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=132e1c8f ebx=00000019 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=189c8905 ebx=0000001a ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=0dc524c6 ebx=0000001b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=1104fc63 ebx=0000001c ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=1d0f5d6c ebx=0000001d ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=2ca078b3 ebx=0000001e ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=2ad31da0 ebx=0000001f ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=2a4591dd ebx=00000022 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1805a9c7 ebx=00000023 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=047b9203 ebx=00000024 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=21f04aa4 ebx=00000025 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=18e3cece ebx=00000026 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=21e04920 ebx=00000027 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=30edb1c9 ebx=00000028 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1258737e ebx=0000002a ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=317180a6 ebx=0000002b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=30e37691 ebx=0000002c ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=2eb004b2 ebx=0000002d ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=3297120b ebx=0000002e ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=16e55518 ebx=0000002f ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=0d6186dd ebx=00000031 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=27dece44 ebx=00000032 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=29206a17 ebx=00000033 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=21cc21d9 ebx=00000035 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=1d183005 ebx=00000036 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=09d31329 ebx=00000037 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=3034ccb3 ebx=00000039 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1d1d18a3 ebx=0000003a ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1941ecf5 ebx=0000003b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=198c5278 ebx=0000003c ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=2172beca ebx=00000015 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=03b45a13 ebx=00000018 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=132e1c8f ebx=00000019 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=189c8905 ebx=0000001a ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=0dc524c6 ebx=0000001b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=1104fc63 ebx=0000001c ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=1d0f5d6c ebx=0000001d ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=2ca078b3 ebx=0000001e ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=2ad31da0 ebx=0000001f ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=2a4591dd ebx=00000022 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1805a9c7 ebx=00000023 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=047b9203 ebx=00000024 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=21f04aa4 ebx=00000025 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=18e3cece ebx=00000026 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=21e04920 ebx=00000027 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=30edb1c9 ebx=00000028 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1258737e ebx=0000002a ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=317180a6 ebx=0000002b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=30e37691 ebx=0000002c ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=2eb004b2 ebx=0000002d ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=3297120b ebx=0000002e ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=16e55518 ebx=0000002f ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=0d6186dd ebx=00000031 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=27dece44 ebx=00000032 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=29206a17 ebx=00000033 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=21cc21d9 ebx=00000035 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=1d183005 ebx=00000036 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=09d31329 ebx=00000037 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=3034ccb3 ebx=00000039 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1d1d18a3 ebx=0000003a ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1941ecf5 ebx=0000003b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=198c5278 ebx=0000003c ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=2172beca ebx=00000015 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=03b45a13 ebx=00000018 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=132e1c8f ebx=00000019 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=189c8905 ebx=0000001a ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=0dc524c6 ebx=0000001b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=1104fc63 ebx=0000001c ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=1d0f5d6c ebx=0000001d ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=2ca078b3 ebx=0000001e ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=2ad31da0 ebx=0000001f ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=2a4591dd ebx=00000022 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1805a9c7 ebx=00000023 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=047b9203 ebx=00000024 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=21f04aa4 ebx=00000025 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=18e3cece ebx=00000026 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=21e04920 ebx=00000027 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=30edb1c9 ebx=00000028 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1258737e ebx=0000002a ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=317180a6 ebx=0000002b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=30e37691 ebx=0000002c ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=2eb004b2 ebx=0000002d ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=3297120b ebx=0000002e ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=16e55518 ebx=0000002f ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=0d6186dd ebx=00000031 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=27dece44 ebx=00000032 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=29206a17 ebx=00000033 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=21cc21d9 ebx=00000035 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=1d183005 ebx=00000036 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=09d31329 ebx=00000037 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=3034ccb3 ebx=00000039 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1d1d18a3 ebx=0000003a ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1941ecf5 ebx=0000003b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=198c5278 ebx=0000003c ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=2172beca ebx=00000015 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=03b45a13 ebx=00000018 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=132e1c8f ebx=00000019 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=189c8905 ebx=0000001a ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=0dc524c6 ebx=0000001b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=1104fc63 ebx=0000001c ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=1d0f5d6c ebx=0000001d ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=2ca078b3 ebx=0000001e ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=2ad31da0 ebx=0000001f ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=2a4591dd ebx=00000022 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1805a9c7 ebx=00000023 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=047b9203 ebx=00000024 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=21f04aa4 ebx=00000025 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=18e3cece ebx=00000026 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=21e04920 ebx=00000027 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=30edb1c9 ebx=00000028 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1258737e ebx=0000002a ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=317180a6 ebx=0000002b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=30e37691 ebx=0000002c ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=2eb004b2 ebx=0000002d ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=3297120b ebx=0000002e ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=16e55518 ebx=0000002f ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=0d6186dd ebx=00000031 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=27dece44 ebx=00000032 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=29206a17 ebx=00000033 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=21cc21d9 ebx=00000035 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=1d183005 ebx=00000036 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=09d31329 ebx=00000037 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=3034ccb3 ebx=00000039 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1d1d18a3 ebx=0000003a ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1941ecf5 ebx=0000003b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=198c5278 ebx=0000003c ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=2172beca ebx=00000015 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=03b45a13 ebx=00000018 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=132e1c8f ebx=00000019 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=189c8905 ebx=0000001a ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=0dc524c6 ebx=0000001b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=1104fc63 ebx=0000001c ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=1d0f5d6c ebx=0000001d ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=2ca078b3 ebx=0000001e ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=2ad31da0 ebx=0000001f ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=2a4591dd ebx=00000022 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1805a9c7 ebx=00000023 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=047b9203 ebx=00000024 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=21f04aa4 ebx=00000025 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=18e3cece ebx=00000026 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=21e04920 ebx=00000027 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=30edb1c9 ebx=00000028 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1258737e ebx=0000002a ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=317180a6 ebx=0000002b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=30e37691 ebx=0000002c ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=2eb004b2 ebx=0000002d ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=3297120b ebx=0000002e ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=16e55518 ebx=0000002f ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=0d6186dd ebx=00000031 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=27dece44 ebx=00000032 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=29206a17 ebx=00000033 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=21cc21d9 ebx=00000035 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=1d183005 ebx=00000036 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=09d31329 ebx=00000037 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=3034ccb3 ebx=00000039 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1d1d18a3 ebx=0000003a ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1941ecf5 ebx=0000003b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=198c5278 ebx=0000003c ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=2172beca ebx=00000015 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=03b45a13 ebx=00000018 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=132e1c8f ebx=00000019 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=189c8905 ebx=0000001a ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=0dc524c6 ebx=0000001b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=1104fc63 ebx=0000001c ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=1d0f5d6c ebx=0000001d ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=2ca078b3 ebx=0000001e ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=2ad31da0 ebx=0000001f ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=2a4591dd ebx=00000022 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1805a9c7 ebx=00000023 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=047b9203 ebx=00000024 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=21f04aa4 ebx=00000025 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=18e3cece ebx=00000026 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=21e04920 ebx=00000027 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=30edb1c9 ebx=00000028 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1258737e ebx=0000002a ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=317180a6 ebx=0000002b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=30e37691 ebx=0000002c ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=2eb004b2 ebx=0000002d ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=3297120b ebx=0000002e ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=16e55518 ebx=0000002f ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=0d6186dd ebx=00000031 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=27dece44 ebx=00000032 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=29206a17 ebx=00000033 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=21cc21d9 ebx=00000035 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=1d183005 ebx=00000036 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=09d31329 ebx=00000037 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=3034ccb3 ebx=00000039 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1d1d18a3 ebx=0000003a ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1941ecf5 ebx=0000003b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=198c5278 ebx=0000003c ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=2172beca ebx=00000015 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=03b45a13 ebx=00000018 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=132e1c8f ebx=00000019 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=189c8905 ebx=0000001a ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=0dc524c6 ebx=0000001b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=1104fc63 ebx=0000001c ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=1d0f5d6c ebx=0000001d ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=2ca078b3 ebx=0000001e ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=2ad31da0 ebx=0000001f ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=2a4591dd ebx=00000022 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1805a9c7 ebx=00000023 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=047b9203 ebx=00000024 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=21f04aa4 ebx=00000025 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=18e3cece ebx=00000026 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=21e04920 ebx=00000027 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=30edb1c9 ebx=00000028 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1258737e ebx=0000002a ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=317180a6 ebx=0000002b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=30e37691 ebx=0000002c ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=2eb004b2 ebx=0000002d ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=3297120b ebx=0000002e ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=16e55518 ebx=0000002f ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=0d6186dd ebx=00000031 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=27dece44 ebx=00000032 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=29206a17 ebx=00000033 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=21cc21d9 ebx=00000035 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=1d183005 ebx=00000036 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=09d31329 ebx=00000037 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=3034ccb3 ebx=00000039 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1d1d18a3 ebx=0000003a ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1941ecf5 ebx=0000003b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=198c5278 ebx=0000003c ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=2172beca ebx=00000015 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=03b45a13 ebx=00000018 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=132e1c8f ebx=00000019 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=189c8905 ebx=0000001a ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=0dc524c6 ebx=0000001b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=1104fc63 ebx=0000001c ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=1d0f5d6c ebx=0000001d ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=2ca078b3 ebx=0000001e ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=2ad31da0 ebx=0000001f ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=2a4591dd ebx=00000022 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1805a9c7 ebx=00000023 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=047b9203 ebx=00000024 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=21f04aa4 ebx=00000025 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=18e3cece ebx=00000026 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=21e04920 ebx=00000027 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=30edb1c9 ebx=00000028 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1258737e ebx=0000002a ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=317180a6 ebx=0000002b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=30e37691 ebx=0000002c ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=2eb004b2 ebx=0000002d ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=3297120b ebx=0000002e ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=16e55518 ebx=0000002f ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=0d6186dd ebx=00000031 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=27dece44 ebx=00000032 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=29206a17 ebx=00000033 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=21cc21d9 ebx=00000035 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=1d183005 ebx=00000036 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=09d31329 ebx=00000037 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=3034ccb3 ebx=00000039 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1d1d18a3 ebx=0000003a ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1941ecf5 ebx=0000003b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=198c5278 ebx=0000003c ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=2172beca ebx=00000015 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=03b45a13 ebx=00000018 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=132e1c8f ebx=00000019 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=189c8905 ebx=0000001a ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=0dc524c6 ebx=0000001b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=1104fc63 ebx=0000001c ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=1d0f5d6c ebx=0000001d ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=2ca078b3 ebx=0000001e ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=2ad31da0 ebx=0000001f ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=2a4591dd ebx=00000022 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1805a9c7 ebx=00000023 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=047b9203 ebx=00000024 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=21f04aa4 ebx=00000025 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=18e3cece ebx=00000026 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=21e04920 ebx=00000027 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=30edb1c9 ebx=00000028 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1258737e ebx=0000002a ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=317180a6 ebx=0000002b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=30e37691 ebx=0000002c ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=2eb004b2 ebx=0000002d ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=3297120b ebx=0000002e ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=16e55518 ebx=0000002f ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=0d6186dd ebx=00000031 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=27dece44 ebx=00000032 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=29206a17 ebx=00000033 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=21cc21d9 ebx=00000035 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=1d183005 ebx=00000036 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=09d31329 ebx=00000037 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=3034ccb3 ebx=00000039 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1d1d18a3 ebx=0000003a ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1941ecf5 ebx=0000003b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=198c5278 ebx=0000003c ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=2172beca ebx=00000015 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=03b45a13 ebx=00000018 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=132e1c8f ebx=00000019 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=189c8905 ebx=0000001a ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=0dc524c6 ebx=0000001b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=1104fc63 ebx=0000001c ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=1d0f5d6c ebx=0000001d ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=2ca078b3 ebx=0000001e ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=2ad31da0 ebx=0000001f ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=2a4591dd ebx=00000022 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1805a9c7 ebx=00000023 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=047b9203 ebx=00000024 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=21f04aa4 ebx=00000025 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=18e3cece ebx=00000026 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=21e04920 ebx=00000027 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=30edb1c9 ebx=00000028 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1258737e ebx=0000002a ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=317180a6 ebx=0000002b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=30e37691 ebx=0000002c ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=2eb004b2 ebx=0000002d ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=3297120b ebx=0000002e ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=16e55518 ebx=0000002f ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=0d6186dd ebx=00000031 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=27dece44 ebx=00000032 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048102
+ cr2=c0000000 error=00000005
+ eax=29206a17 ebx=00000033 ecx=00000005 edx=00000002
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=21cc21d9 ebx=00000035 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=1d183005 ebx=00000036 ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=09d31329 ebx=00000037 ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+Page fault at 0: not present error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480f1
+ cr2=00000000 error=00000006
+ eax=3034ccb3 ebx=00000039 ecx=00000005 edx=00000000
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1d1d18a3 ebx=0000003a ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0: not present error reading page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x80480fb
+ cr2=00000000 error=00000004
+ eax=1941ecf5 ebx=0000003b ecx=00000005 edx=00000001
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+Page fault at 0xc0000000: rights violation error writing page in user context.
+multi-oom: dying due to interrupt 0x0e (#PF Page-Fault Exception).
+Interrupt 0x0e (#PF Page-Fault Exception) at eip=0x8048109
+ cr2=c0000000 error=00000007
+ eax=198c5278 ebx=0000003c ecx=00000005 edx=00000003
+ esi=bfffffe0 edi=00000000 esp=bffffef0 ebp=bfffffa8
+ cs=001b ds=0023 es=0023 ss=0023
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(-1)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+multi-oom: exit(60)
+(multi-oom) success. program forked 10 times.
+(multi-oom) end
+multi-oom: exit(60)
 Execution of 'multi-oom' complete.
-Timer: 85 ticks
-Thread: 0 idle ticks, 86 kernel ticks, 0 user ticks
-hda2 (filesys): 26 reads, 228 writes
+Timer: 8153 ticks
+Thread: 9 idle ticks, 218 kernel ticks, 7926 user ticks
+hda2 (filesys): 301757 reads, 228 writes
 hda3 (scratch): 111 reads, 2 writes
-Console: 832 characters output
+Console: 139262 characters output
 Keyboard: 0 keys pressed
-Exception: 0 page faults
+Exception: 320 page faults
 Powering off...

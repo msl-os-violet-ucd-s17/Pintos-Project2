@@ -1,14 +1,14 @@
 Copying tests/filesys/base/sm-create to scratch partition...
-qemu-system-x86_64 -device isa-debug-exit -hda /tmp/av2zqdoH4P.dsk -m 4 -net none -nographic -monitor null
+qemu-system-x86_64 -device isa-debug-exit -hda /tmp/bHGl6GK8ty.dsk -m 4 -net none -nographic -monitor null
 PiLo hda1
-Loading...........
+Loading............
 Kernel command line: -q -f extract run sm-create
 Pintos booting with 3,968 kB RAM...
 367 pages available in kernel pool.
 367 pages available in user pool.
-Calibrating timer...  238,796,800 loops/s.
+Calibrating timer...  366,592,000 loops/s.
 hda: 5,040 sectors (2 MB), model "QM00001", serial "QEMU HARDDISK"
-hda1: 183 sectors (91 kB), Pintos OS kernel (20)
+hda1: 193 sectors (96 kB), Pintos OS kernel (20)
 hda2: 4,096 sectors (2 MB), Pintos file system (21)
 hda3: 98 sectors (49 kB), Pintos scratch (22)
 filesys: using hda2
@@ -19,12 +19,19 @@ Extracting ustar archive from scratch device into file system...
 Putting 'sm-create' into the file system...
 Erasing ustar archive...
 Executing 'sm-create':
+(sm-create) begin
+(sm-create) create "blargle"
+(sm-create) open "blargle" for verification
+(sm-create) verified contents of "blargle"
+(sm-create) close "blargle"
+(sm-create) end
+sm-create: exit(0)
 Execution of 'sm-create' complete.
 Timer: 92 ticks
-Thread: 0 idle ticks, 92 kernel ticks, 0 user ticks
-hda2 (filesys): 26 reads, 200 writes
+Thread: 0 idle ticks, 86 kernel ticks, 6 user ticks
+hda2 (filesys): 95 reads, 216 writes
 hda3 (scratch): 97 reads, 2 writes
-Console: 830 characters output
+Console: 1027 characters output
 Keyboard: 0 keys pressed
 Exception: 0 page faults
 Powering off...

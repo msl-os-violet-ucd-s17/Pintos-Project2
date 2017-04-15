@@ -1,4 +1,4 @@
-WARNING: Image format was not specified for '/tmp/e47rx2O0PI.dsk' and probing guessed raw.
+WARNING: Image format was not specified for '/tmp/OtZkb1rY_G.dsk' and probing guessed raw.
          Automatically detecting the format is dangerous for raw images, write operations on block 0 will be restricted.
          Specify the 'raw' format explicitly to remove the restrictions.
 warning: TCG doesn't support requested feature: CPUID.01H:ECX.vmx [bit 5]

@@ -1,14 +1,14 @@
 Copying tests/filesys/base/lg-seq-block to scratch partition...
-qemu-system-x86_64 -device isa-debug-exit -hda /tmp/kD51ZUei8y.dsk -m 4 -net none -nographic -monitor null
+qemu-system-x86_64 -device isa-debug-exit -hda /tmp/zlyqv4bsVZ.dsk -m 4 -net none -nographic -monitor null
 PiLo hda1
-Loading...........
+Loading............
 Kernel command line: -q -f extract run lg-seq-block
 Pintos booting with 3,968 kB RAM...
 367 pages available in kernel pool.
 367 pages available in user pool.
-Calibrating timer...  407,552,000 loops/s.
+Calibrating timer...  419,020,800 loops/s.
 hda: 5,040 sectors (2 MB), model "QM00001", serial "QEMU HARDDISK"
-hda1: 183 sectors (91 kB), Pintos OS kernel (20)
+hda1: 193 sectors (96 kB), Pintos OS kernel (20)
 hda2: 4,096 sectors (2 MB), Pintos file system (21)
 hda3: 98 sectors (49 kB), Pintos scratch (22)
 filesys: using hda2
@@ -19,12 +19,22 @@ Extracting ustar archive from scratch device into file system...
 Putting 'lg-seq-block' into the file system...
 Erasing ustar archive...
 Executing 'lg-seq-block':
+(lg-seq-block) begin
+(lg-seq-block) create "noodle"
+(lg-seq-block) open "noodle"
+(lg-seq-block) writing "noodle"
+(lg-seq-block) close "noodle"
+(lg-seq-block) open "noodle" for verification
+(lg-seq-block) verified contents of "noodle"
+(lg-seq-block) close "noodle"
+(lg-seq-block) end
+lg-seq-block: exit(0)
 Execution of 'lg-seq-block' complete.
-Timer: 86 ticks
-Thread: 0 idle ticks, 86 kernel ticks, 0 user ticks
-hda2 (filesys): 26 reads, 200 writes
+Timer: 106 ticks
+Thread: 0 idle ticks, 87 kernel ticks, 20 user ticks
+hda2 (filesys): 529 reads, 647 writes
 hda3 (scratch): 97 reads, 2 writes
-Console: 842 characters output
+Console: 1150 characters output
 Keyboard: 0 keys pressed
 Exception: 0 page faults
 Powering off...

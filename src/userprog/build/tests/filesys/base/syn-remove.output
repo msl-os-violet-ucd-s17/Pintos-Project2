@@ -1,14 +1,14 @@
 Copying tests/filesys/base/syn-remove to scratch partition...
-qemu-system-x86_64 -device isa-debug-exit -hda /tmp/jQH16FLw_9.dsk -m 4 -net none -nographic -monitor null
+qemu-system-x86_64 -device isa-debug-exit -hda /tmp/cVHOyFouaQ.dsk -m 4 -net none -nographic -monitor null
 PiLo hda1
-Loading...........
+Loading............
 Kernel command line: -q -f extract run syn-remove
 Pintos booting with 3,968 kB RAM...
 367 pages available in kernel pool.
 367 pages available in user pool.
-Calibrating timer...  222,412,800 loops/s.
+Calibrating timer...  419,020,800 loops/s.
 hda: 5,040 sectors (2 MB), model "QM00001", serial "QEMU HARDDISK"
-hda1: 183 sectors (91 kB), Pintos OS kernel (20)
+hda1: 193 sectors (96 kB), Pintos OS kernel (20)
 hda2: 4,096 sectors (2 MB), Pintos file system (21)
 hda3: 100 sectors (50 kB), Pintos scratch (22)
 filesys: using hda2
@@ -19,12 +19,22 @@ Extracting ustar archive from scratch device into file system...
 Putting 'syn-remove' into the file system...
 Erasing ustar archive...
 Executing 'syn-remove':
+(syn-remove) begin
+(syn-remove) create "deleteme"
+(syn-remove) open "deleteme"
+(syn-remove) remove "deleteme"
+(syn-remove) write "deleteme"
+(syn-remove) seek "deleteme" to 0
+(syn-remove) read "deleteme"
+(syn-remove) close "deleteme"
+(syn-remove) end
+syn-remove: exit(0)
 Execution of 'syn-remove' complete.
-Timer: 91 ticks
-Thread: 0 idle ticks, 92 kernel ticks, 0 user ticks
-hda2 (filesys): 26 reads, 204 writes
+Timer: 92 ticks
+Thread: 0 idle ticks, 85 kernel ticks, 7 user ticks
+hda2 (filesys): 93 reads, 217 writes
 hda3 (scratch): 99 reads, 2 writes
-Console: 835 characters output
+Console: 1105 characters output
 Keyboard: 0 keys pressed
 Exception: 0 page faults
 Powering off...

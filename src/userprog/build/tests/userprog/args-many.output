@@ -1,14 +1,14 @@
 Copying tests/userprog/args-many to scratch partition...
-qemu-system-x86_64 -device isa-debug-exit -hda /tmp/EZ_Yh7FznQ.dsk -m 4 -net none -nographic -monitor null
+qemu-system-x86_64 -device isa-debug-exit -hda /tmp/AAKSTJ3Cod.dsk -m 4 -net none -nographic -monitor null
 PiLo hda1
-Loading...........
+Loading............
 Kernel command line: -q -f extract run 'args-many a b c d e f g h i j k l m n o p q r s t u v'
 Pintos booting with 3,968 kB RAM...
 367 pages available in kernel pool.
 367 pages available in user pool.
-Calibrating timer...  419,020,800 loops/s.
+Calibrating timer...  415,744,000 loops/s.
 hda: 5,040 sectors (2 MB), model "QM00001", serial "QEMU HARDDISK"
-hda1: 183 sectors (91 kB), Pintos OS kernel (20)
+hda1: 193 sectors (96 kB), Pintos OS kernel (20)
 hda2: 4,096 sectors (2 MB), Pintos file system (21)
 hda3: 94 sectors (47 kB), Pintos scratch (22)
 filesys: using hda2
@@ -19,12 +19,40 @@ Extracting ustar archive from scratch device into file system...
 Putting 'args-many' into the file system...
 Erasing ustar archive...
 Executing 'args-many a b c d e f g h i j k l m n o p q r s t u v':
-Execution of 'args-many' complete.
-Timer: 82 ticks
-Thread: 0 idle ticks, 82 kernel ticks, 0 user ticks
-hda2 (filesys): 26 reads, 192 writes
+(args) begin
+(args) argc = 23
+(args) argv[0] = 'args-many'
+(args) argv[1] = 'a'
+(args) argv[2] = 'b'
+(args) argv[3] = 'c'
+(args) argv[4] = 'd'
+(args) argv[5] = 'e'
+(args) argv[6] = 'f'
+(args) argv[7] = 'g'
+(args) argv[8] = 'h'
+(args) argv[9] = 'i'
+(args) argv[10] = 'j'
+(args) argv[11] = 'k'
+(args) argv[12] = 'l'
+(args) argv[13] = 'm'
+(args) argv[14] = 'n'
+(args) argv[15] = 'o'
+(args) argv[16] = 'p'
+(args) argv[17] = 'q'
+(args) argv[18] = 'r'
+(args) argv[19] = 's'
+(args) argv[20] = 't'
+(args) argv[21] = 'u'
+(args) argv[22] = 'v'
+(args) argv[23] = null
+(args) end
+args-many: exit(0)
+Execution of 'args-many a b c d e f g h i j k l m n o p q r s t u v' complete.
+Timer: 96 ticks
+Thread: 0 idle ticks, 85 kernel ticks, 11 user ticks
+hda2 (filesys): 65 reads, 192 writes
 hda3 (scratch): 93 reads, 2 writes
-Console: 920 characters output
+Console: 1552 characters output
 Keyboard: 0 keys pressed
 Exception: 0 page faults
 Powering off...

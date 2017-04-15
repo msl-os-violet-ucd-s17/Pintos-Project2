@@ -1,14 +1,14 @@
 Copying tests/filesys/base/lg-random to scratch partition...
-qemu-system-x86_64 -device isa-debug-exit -hda /tmp/ukUGE6z4mY.dsk -m 4 -net none -nographic -monitor null
+qemu-system-x86_64 -device isa-debug-exit -hda /tmp/9qvcEodKbr.dsk -m 4 -net none -nographic -monitor null
 PiLo hda1
-Loading...........
+Loading............
 Kernel command line: -q -f extract run lg-random
 Pintos booting with 3,968 kB RAM...
 367 pages available in kernel pool.
 367 pages available in user pool.
-Calibrating timer...  183,296,000 loops/s.
+Calibrating timer...  419,020,800 loops/s.
 hda: 5,040 sectors (2 MB), model "QM00001", serial "QEMU HARDDISK"
-hda1: 183 sectors (91 kB), Pintos OS kernel (20)
+hda1: 193 sectors (96 kB), Pintos OS kernel (20)
 hda2: 4,096 sectors (2 MB), Pintos file system (21)
 hda3: 101 sectors (50 kB), Pintos scratch (22)
 filesys: using hda2
@@ -19,12 +19,20 @@ Extracting ustar archive from scratch device into file system...
 Putting 'lg-random' into the file system...
 Erasing ustar archive...
 Executing 'lg-random':
+(lg-random) begin
+(lg-random) create "bazzle"
+(lg-random) open "bazzle"
+(lg-random) write "bazzle" in random order
+(lg-random) read "bazzle" in random order
+(lg-random) close "bazzle"
+(lg-random) end
+lg-random: exit(0)
 Execution of 'lg-random' complete.
-Timer: 81 ticks
-Thread: 0 idle ticks, 81 kernel ticks, 0 user ticks
-hda2 (filesys): 26 reads, 206 writes
+Timer: 96 ticks
+Thread: 0 idle ticks, 83 kernel ticks, 13 user ticks
+hda2 (filesys): 235 reads, 510 writes
 hda3 (scratch): 100 reads, 2 writes
-Console: 832 characters output
+Console: 1053 characters output
 Keyboard: 0 keys pressed
 Exception: 0 page faults
 Powering off...

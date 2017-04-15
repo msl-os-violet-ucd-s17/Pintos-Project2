@@ -1,15 +1,15 @@
 Copying tests/userprog/exec-bound to scratch partition...
 Copying tests/userprog/child-args to scratch partition...
-qemu-system-x86_64 -device isa-debug-exit -hda /tmp/QyvDlr1Yz7.dsk -m 4 -net none -nographic -monitor null
+qemu-system-x86_64 -device isa-debug-exit -hda /tmp/9ZDXYIeVhd.dsk -m 4 -net none -nographic -monitor null
 PiLo hda1
-Loading...........
+Loading............
 Kernel command line: -q -f extract run exec-bound
 Pintos booting with 3,968 kB RAM...
 367 pages available in kernel pool.
 367 pages available in user pool.
-Calibrating timer...  202,752,000 loops/s.
+Calibrating timer...  209,510,400 loops/s.
 hda: 5,040 sectors (2 MB), model "QM00001", serial "QEMU HARDDISK"
-hda1: 183 sectors (91 kB), Pintos OS kernel (20)
+hda1: 193 sectors (96 kB), Pintos OS kernel (20)
 hda2: 4,096 sectors (2 MB), Pintos file system (21)
 hda3: 189 sectors (94 kB), Pintos scratch (22)
 filesys: using hda2
@@ -21,12 +21,23 @@ Putting 'exec-bound' into the file system...
 Putting 'child-args' into the file system...
 Erasing ustar archive...
 Executing 'exec-bound':
+(exec-bound) begin
+(args) begin
+(args) argc = 3
+(args) argv[0] = 'child-args'
+(args) argv[1] = 'arg1'
+(args) argv[2] = 'arg2'
+(args) argv[3] = null
+(args) end
+child-args: exit(0)
+(exec-bound) end
+exec-bound: exit(0)
 Execution of 'exec-bound' complete.
-Timer: 89 ticks
-Thread: 0 idle ticks, 89 kernel ticks, 0 user ticks
-hda2 (filesys): 51 reads, 384 writes
+Timer: 94 ticks
+Thread: 3 idle ticks, 86 kernel ticks, 6 user ticks
+hda2 (filesys): 128 reads, 384 writes
 hda3 (scratch): 188 reads, 2 writes
-Console: 881 characters output
+Console: 1098 characters output
 Keyboard: 0 keys pressed
 Exception: 0 page faults
 Powering off...

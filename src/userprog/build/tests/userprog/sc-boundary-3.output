@@ -1,14 +1,14 @@
 Copying tests/userprog/sc-boundary-3 to scratch partition...
-qemu-system-x86_64 -device isa-debug-exit -hda /tmp/FtnhjWonYw.dsk -m 4 -net none -nographic -monitor null
+qemu-system-x86_64 -device isa-debug-exit -hda /tmp/iboOYrT_ww.dsk -m 4 -net none -nographic -monitor null
 PiLo hda1
-Loading...........
+Loading............
 Kernel command line: -q -f extract run sc-boundary-3
 Pintos booting with 3,968 kB RAM...
 367 pages available in kernel pool.
 367 pages available in user pool.
-Calibrating timer...  419,020,800 loops/s.
+Calibrating timer...  314,163,200 loops/s.
 hda: 5,040 sectors (2 MB), model "QM00001", serial "QEMU HARDDISK"
-hda1: 183 sectors (91 kB), Pintos OS kernel (20)
+hda1: 193 sectors (96 kB), Pintos OS kernel (20)
 hda2: 4,096 sectors (2 MB), Pintos file system (21)
 hda3: 97 sectors (48 kB), Pintos scratch (22)
 filesys: using hda2
@@ -19,12 +19,14 @@ Extracting ustar archive from scratch device into file system...
 Putting 'sc-boundary-3' into the file system...
 Erasing ustar archive...
 Executing 'sc-boundary-3':
+(sc-boundary-3) begin
+sc-boundary-3: exit(-1)
 Execution of 'sc-boundary-3' complete.
-Timer: 78 ticks
-Thread: 0 idle ticks, 78 kernel ticks, 0 user ticks
-hda2 (filesys): 26 reads, 198 writes
+Timer: 86 ticks
+Thread: 0 idle ticks, 85 kernel ticks, 2 user ticks
+hda2 (filesys): 59 reads, 198 writes
 hda3 (scratch): 96 reads, 2 writes
-Console: 846 characters output
+Console: 892 characters output
 Keyboard: 0 keys pressed
-Exception: 0 page faults
+Exception: 1 page faults
 Powering off...

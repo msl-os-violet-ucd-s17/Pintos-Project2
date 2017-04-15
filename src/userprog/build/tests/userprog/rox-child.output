@@ -1,15 +1,15 @@
 Copying tests/userprog/rox-child to scratch partition...
 Copying tests/userprog/child-rox to scratch partition...
-qemu-system-x86_64 -device isa-debug-exit -hda /tmp/KFQtR1Vs7n.dsk -m 4 -net none -nographic -monitor null
+qemu-system-x86_64 -device isa-debug-exit -hda /tmp/61hNNxuQ_V.dsk -m 4 -net none -nographic -monitor null
 PiLo hda1
-Loading...........
+Loading............
 Kernel command line: -q -f extract run rox-child
 Pintos booting with 3,968 kB RAM...
 367 pages available in kernel pool.
 367 pages available in user pool.
-Calibrating timer...  150,528,000 loops/s.
+Calibrating timer...  366,592,000 loops/s.
 hda: 5,040 sectors (2 MB), model "QM00001", serial "QEMU HARDDISK"
-hda1: 183 sectors (91 kB), Pintos OS kernel (20)
+hda1: 193 sectors (96 kB), Pintos OS kernel (20)
 hda2: 4,096 sectors (2 MB), Pintos file system (21)
 hda3: 201 sectors (100 kB), Pintos scratch (22)
 filesys: using hda2
@@ -21,12 +21,25 @@ Putting 'rox-child' into the file system...
 Putting 'child-rox' into the file system...
 Erasing ustar archive...
 Executing 'rox-child':
+(rox-child) begin
+(rox-child) open "child-rox"
+(rox-child) read "child-rox"
+(rox-child) write "child-rox"
+(rox-child) exec "child-rox 1"
+(child-rox) begin
+(child-rox) try to write "child-rox"
+(child-rox) try to write "child-rox"
+(child-rox) end
+child-rox: exit(12)
+(rox-child) write "child-rox"
+(rox-child) end
+rox-child: exit(0)
 Execution of 'rox-child' complete.
-Timer: 92 ticks
-Thread: 0 idle ticks, 92 kernel ticks, 0 user ticks
-hda2 (filesys): 83 reads, 408 writes
+Timer: 99 ticks
+Thread: 0 idle ticks, 91 kernel ticks, 8 user ticks
+hda2 (filesys): 136 reads, 410 writes
 hda3 (scratch): 200 reads, 2 writes
-Console: 877 characters output
+Console: 1208 characters output
 Keyboard: 0 keys pressed
 Exception: 0 page faults
 Powering off...

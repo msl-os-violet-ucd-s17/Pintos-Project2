@@ -1,14 +1,14 @@
 Copying tests/userprog/create-null to scratch partition...
-qemu-system-x86_64 -device isa-debug-exit -hda /tmp/3lFTmmY0x1.dsk -m 4 -net none -nographic -monitor null
+qemu-system-x86_64 -device isa-debug-exit -hda /tmp/ZTbR1Rem2Q.dsk -m 4 -net none -nographic -monitor null
 PiLo hda1
-Loading...........
+Loading............
 Kernel command line: -q -f extract run create-null
 Pintos booting with 3,968 kB RAM...
 367 pages available in kernel pool.
 367 pages available in user pool.
 Calibrating timer...  419,020,800 loops/s.
 hda: 5,040 sectors (2 MB), model "QM00001", serial "QEMU HARDDISK"
-hda1: 183 sectors (91 kB), Pintos OS kernel (20)
+hda1: 193 sectors (96 kB), Pintos OS kernel (20)
 hda2: 4,096 sectors (2 MB), Pintos file system (21)
 hda3: 95 sectors (47 kB), Pintos scratch (22)
 filesys: using hda2
@@ -19,12 +19,14 @@ Extracting ustar archive from scratch device into file system...
 Putting 'create-null' into the file system...
 Erasing ustar archive...
 Executing 'create-null':
+(create-null) begin
+create-null: exit(-1)
 Execution of 'create-null' complete.
-Timer: 78 ticks
-Thread: 0 idle ticks, 78 kernel ticks, 0 user ticks
-hda2 (filesys): 26 reads, 194 writes
+Timer: 86 ticks
+Thread: 0 idle ticks, 83 kernel ticks, 3 user ticks
+hda2 (filesys): 65 reads, 194 writes
 hda3 (scratch): 94 reads, 2 writes
-Console: 838 characters output
+Console: 880 characters output
 Keyboard: 0 keys pressed
 Exception: 0 page faults
 Powering off...

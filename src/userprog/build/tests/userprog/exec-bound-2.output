@@ -1,14 +1,14 @@
 Copying tests/userprog/exec-bound-2 to scratch partition...
-qemu-system-x86_64 -device isa-debug-exit -hda /tmp/N2LcnaXjfH.dsk -m 4 -net none -nographic -monitor null
+qemu-system-x86_64 -device isa-debug-exit -hda /tmp/z_frrdDdeP.dsk -m 4 -net none -nographic -monitor null
 PiLo hda1
-Loading...........
+Loading............
 Kernel command line: -q -f extract run exec-bound-2
 Pintos booting with 3,968 kB RAM...
 367 pages available in kernel pool.
 367 pages available in user pool.
-Calibrating timer...  419,020,800 loops/s.
+Calibrating timer...  418,201,600 loops/s.
 hda: 5,040 sectors (2 MB), model "QM00001", serial "QEMU HARDDISK"
-hda1: 183 sectors (91 kB), Pintos OS kernel (20)
+hda1: 193 sectors (96 kB), Pintos OS kernel (20)
 hda2: 4,096 sectors (2 MB), Pintos file system (21)
 hda3: 98 sectors (49 kB), Pintos scratch (22)
 filesys: using hda2
@@ -19,12 +19,14 @@ Extracting ustar archive from scratch device into file system...
 Putting 'exec-bound-2' into the file system...
 Erasing ustar archive...
 Executing 'exec-bound-2':
+(exec-bound-2) begin
+exec-bound-2: exit(-1)
 Execution of 'exec-bound-2' complete.
-Timer: 83 ticks
-Thread: 0 idle ticks, 83 kernel ticks, 0 user ticks
-hda2 (filesys): 26 reads, 200 writes
+Timer: 87 ticks
+Thread: 0 idle ticks, 85 kernel ticks, 2 user ticks
+hda2 (filesys): 59 reads, 200 writes
 hda3 (scratch): 97 reads, 2 writes
-Console: 842 characters output
+Console: 886 characters output
 Keyboard: 0 keys pressed
-Exception: 0 page faults
+Exception: 1 page faults
 Powering off...

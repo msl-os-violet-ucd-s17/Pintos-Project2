@@ -1,15 +1,15 @@
 Copying tests/userprog/open-boundary to scratch partition...
 Copying ../../tests/userprog/sample.txt to scratch partition...
-qemu-system-x86_64 -device isa-debug-exit -hda /tmp/YwM9k1iZ8M.dsk -m 4 -net none -nographic -monitor null
+qemu-system-x86_64 -device isa-debug-exit -hda /tmp/oa9P6EG3Vc.dsk -m 4 -net none -nographic -monitor null
 PiLo hda1
-Loading...........
+Loading............
 Kernel command line: -q -f extract run open-boundary
 Pintos booting with 3,968 kB RAM...
 367 pages available in kernel pool.
 367 pages available in user pool.
-Calibrating timer...  419,020,800 loops/s.
+Calibrating timer...  366,592,000 loops/s.
 hda: 5,040 sectors (2 MB), model "QM00001", serial "QEMU HARDDISK"
-hda1: 183 sectors (91 kB), Pintos OS kernel (20)
+hda1: 193 sectors (96 kB), Pintos OS kernel (20)
 hda2: 4,096 sectors (2 MB), Pintos file system (21)
 hda3: 99 sectors (49 kB), Pintos scratch (22)
 filesys: using hda2
@@ -21,12 +21,16 @@ Putting 'open-boundary' into the file system...
 Putting 'sample.txt' into the file system...
 Erasing ustar archive...
 Executing 'open-boundary':
+(open-boundary) begin
+(open-boundary) open "sample.txt"
+(open-boundary) end
+open-boundary: exit(0)
 Execution of 'open-boundary' complete.
-Timer: 77 ticks
-Thread: 0 idle ticks, 77 kernel ticks, 0 user ticks
-hda2 (filesys): 51 reads, 204 writes
+Timer: 89 ticks
+Thread: 0 idle ticks, 87 kernel ticks, 3 user ticks
+hda2 (filesys): 88 reads, 204 writes
 hda3 (scratch): 98 reads, 2 writes
-Console: 891 characters output
+Console: 990 characters output
 Keyboard: 0 keys pressed
 Exception: 0 page faults
 Powering off...
